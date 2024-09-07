@@ -1,15 +1,12 @@
-import { Text, View } from "react-native";
+import { TamaguiProvider } from "@tamagui/core";
+import { Button } from "tamagui";
 
-export default function Index() {
+import React from "react";
+
+export default () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
+    <TamaguiProvider>
+      <Button>Click me</Button>
+    </TamaguiProvider>
   );
-}
+};
